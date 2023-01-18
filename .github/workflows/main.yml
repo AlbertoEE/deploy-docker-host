@@ -48,7 +48,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          file: src/ops/docker/Dockerfile
+          file: ops/docker/Dockerfile
           
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v0.1.7
